@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\Admin\AdminController;
+use App\Http\Controllers\Admin\AuthController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
@@ -14,6 +16,27 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::group(['as' => 'admin.', 'prefix' => 'admin'], function () {
+    
+    Route::controller(AuthController::class)->group(function () {
+        Route::get('/login', 'login')->name('login');
+        Route::get('/register', 'register')->name('register'); 
+        Route::get('/logout', 'logout')->name('logout');
+        Route::post('/store', 'store')->name('register.store');
+        Route::post('/login', 'authenticate')->name('login.authenticate');
+    });
+
+    Route::get('/', function () {
+        return redirect()->route('login');
+    })->name('login');
+
+    Route::middleware('isAdmin')->group(function () {
+        Route::controller(AdminController::class)->group(function () {
+            Route::get('/', 'index')->name('home');
+        }); 
+    });
+});
+
 Route::controller(HomeController::class)->group(function () {
     Route::get('/', 'index')->name('home');
     Route::get('/about', 'about')->name('about');
@@ -23,6 +46,9 @@ Route::controller(HomeController::class)->group(function () {
     Route::get('/faq', 'faq')->name('faq');
     Route::get('/privacy', 'privacy')->name('privacy');
     Route::get('/terms', 'terms')->name('terms');
+    Route::get('/disclaimer','disclaimer')->name('disclaimer');
+    Route::get('/investors-charter', 'investorsCharter')->name('investors-charter');
+    Route::get('/investors-complaints', 'investorsComplaints')->name('investors-complaints');
 });
 
 

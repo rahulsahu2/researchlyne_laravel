@@ -35,12 +35,12 @@ class HomeController extends Controller
     }
 
     public function faq(){
-        return view('frontend.home.how');
+        return view('frontend.home.faqs');
     }
 
     public function contact()
     {
-        return view('frontend.home.contact');
+        return view('frontend.home.contact-us');
     }
 
     public function privacy()
@@ -53,5 +53,18 @@ class HomeController extends Controller
         return view('frontend.home.terms');
     }
 
-    
+    public function disclaimer(){
+
+        return view('frontend.home.disclaimer');
+    }
+
+    public function investorsCharter(){
+
+        return view('frontend.home.investor-charter');
+    }
+
+    public function investorsComplaints(){
+        $data = $this->jsonService->getInvestorsComplaints();
+        return view('frontend.home.investor-complaints',compact('data'));
+    }
 }

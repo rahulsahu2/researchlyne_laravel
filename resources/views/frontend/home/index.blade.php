@@ -51,7 +51,29 @@
             </div>
             <div class="col-lg-6 col-md-5">
             <div class="banner__thumb" data-aos="fade-left" data-aos-duration="1000">
+              <div class="about__thumb-image floating-content ">
                 <img src="assets/images/banner/home1/1.png" alt="banner-thumb" class="dark">
+                <div class="floating-content__top-left pricecontainer" data-aos="fade-right" data-aos-duration="1000">
+                  @for ($i = 0; $i < 1; $i++)
+                  <div class="floating-content__item">
+                    <h3> <span class="purecounter" data-purecounter-start="0" data-purecounter-end="45">45</span>% Rise
+                    </h3>
+                    <p>HCL Tech NIFTY {{$i}}</p>
+                    <span>Within {{$i}} weeks</span>
+                  </div>
+                  @endfor
+                </div>
+                <div class="floating-content__top-right pricecontainer" data-aos="fade-left" data-aos-duration="1000">
+                  @for ($i = 0; $i < 1; $i++)
+                  <div class="floating-content__item">
+                    <h3> <span class="purecounter" data-purecounter-start="0" data-purecounter-end="45">45</span>% Rise
+                    </h3>
+                    <p>TCS NIFTY {{$i}}</p>
+                    <span>Within {{$i}} weeks</span>
+                  </div>
+                  @endfor
+                </div>                
+              </div>
             </div>
             </div>
         </div>
@@ -107,45 +129,13 @@
       <div class="blog__wrapper" data-aos="fade-up" data-aos-duration="1000">
         <div class="blog__slider swiper">
           <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="blog__item blog__item--style2">
-                <div class="blog__item-inner">
-                  <div class="blog__content">
-                    <div class="blog__meta">
-                      <span class="blog__meta-tag blog__meta-tag--style1">+42.58% (Within 24 weeks)</span>
-                    </div>
-                    <h5 class="10"> <a href="blog-details.html">Steel Authority of India Ltd.</a> </h5>
-                    <table class="table table-bordered">
-                        <thead>
-                            <tr>
-                                <th scope="col">Description</th>
-                                <th scope="col">Date</th>
-                                <th scope="col">Price</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="custom-border">Rec. Price</td>
-                                <td class="custom-border no-border-right">14-Feb-2024</td>
-                                <td class="custom-border">122.95</td>
-                            </tr>
-                            <tr>
-                                <td class="custom-border">High Price</td>
-                                <td class="custom-border no-border-right">22-May-2024</td>
-                                <td class="custom-border">175.35</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                  </div>
-                </div>
-              </div>
-            </div>
+            @for ($i = 0; $i < 3; $i++)
             <div class="swiper-slide">
                 <div class="blog__item blog__item--style2">
                   <div class="blog__item-inner">
                     <div class="blog__content">
                       <div class="blog__meta">
-                        <span class="blog__meta-tag blog__meta-tag--style1">+42.58% (Within 24 weeks)</span>
+                        <span class="blog__meta-tag blog__meta-tag--style1"><h4><i class="fa fa-arrow-up"></i> +42.58%</h4></span>
                       </div>
                       <h5 class="10"> <a href="#">Steel Authority of India Ltd.</a> </h5>
                       <table class="table table-bordered">
@@ -170,42 +160,13 @@
                           </tbody>
                       </table>
                     </div>
+                    <div>
+                        <h5 class="10 text-center mb-0">WITHIN 13 WEEKS</h5>
+                      </div>
                   </div>
                 </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="blog__item blog__item--style2">
-                    <div class="blog__item-inner">
-                        <div class="blog__content">
-                            <div class="blog__meta">
-                            <span class="blog__meta-tag blog__meta-tag--style1">+42.58% (Within 24 weeks)</span>
-                            </div>
-                            <h5 class="10"> <a href="blog-details.html">Steel Authority of India Ltd.</a> </h5>
-                            <table class="table table-bordered">
-                                <thead>
-                                    <tr>
-                                        <th scope="col">Description</th>
-                                        <th scope="col">Date</th>
-                                        <th scope="col">Price</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td class="custom-border">Rec. Price</td>
-                                        <td class="custom-border no-border-right">14-Feb-2024</td>
-                                        <td class="custom-border">122.95</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="custom-border">High Price</td>
-                                        <td class="custom-border no-border-right">22-May-2024</td>
-                                        <td class="custom-border">175.35</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-            </div>
+              </div>
+            @endfor
           </div>
         </div>
       </div>
@@ -369,68 +330,10 @@
 
 @include('frontend.components.subscriptions-section', ['data' => $data])
 
-    <!-- ===============>> Contact section start here <<================= -->
-    <section class="contact padding-top padding-bottom">
-        <div class="container">
-          <div class="contact__wrapper">
-            <div class="row g-5">
-              <div class="col-md-5">
-                <div class="contact__info" data-aos="fade-right" data-aos-duration="1000">
-                  <div class="contact__social">
-                    <h3><span>SEBI</span> Registered Research Analyst (INH100010013).</h3>
-                    <p>Mr. Amiteshwar Singh is Proprietor of M/s Amiteshwar.in and Researchlyne.com is a unit of Amiteshwar.in.
-                        Researchlyne.com is exclusively focused on research of Mutli-Cap Stocks and is backed by skilled research analyst 
-                        who has more than half a decade of experience in stock market. Through this website the Research Analyst is trying 
-                        to offer good researched stocks to its subscribers.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-7">
-                <div class="contact__form">
-                  <form action="#" data-aos="fade-left" data-aos-duration="1000">
-                    <div class="row g-4">
-                      <div class="col-6">
-                        <div>
-                          <input class="form-control" type="text" id="name" placeholder="Full Name">
-                        </div>
-                      </div>
-                      <div class="col-6">
-                        <div>
-                          <input class="form-control" type="email" id="email" placeholder="Email here">
-                        </div>
-                      </div>
-                      <div class="col-6">
-                        <div>
-                          <input class="form-control" type="text" id="mobile" placeholder="Mobile here">
-                        </div>
-                      </div>
-                      <div class="col-6">
-                        <div>
-                          <input class="form-control" type="text" id="subject" placeholder="Subject here">
-                        </div>
-                      </div>
-                      <div class="col-12">
-                        <div>
-                          <textarea cols="30" rows="3" class="form-control" id="textarea"
-                            placeholder="Enter Your Message"></textarea>
-                        </div>
-                      </div>
-                    </div>
-                    <button type="submit" class="trk-btn trk-btn--border trk-btn--primary mt-4 d-block">Send Message</button>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="contact__shape">
-          <span class="contact__shape-item contact__shape-item--1"><img src="assets/images/contact/4.png"
-              alt="shape-icon"></span>
-          <span class="contact__shape-item contact__shape-item--2"> <span></span> </span>
-        </div>
-    </section>
-    <!-- ===============>> Contact section start here <<================= -->
-    
-    
+@include('frontend.components.faqs-section', ['data' => null])
+
+@include('frontend.components.contact-section', ['data' => [
+    'title' => 'Contact Us',
+    'contact'=> null,
+    'content' => "yes"]])
 @endsection

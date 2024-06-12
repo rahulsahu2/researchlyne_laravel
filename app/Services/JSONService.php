@@ -2,7 +2,7 @@
 namespace App\Services;
 
 use stdClass;
-class JSONService
+class JSONService extends CommonService
 {
     public function getAboutUs(){
         $data = new stdClass();
@@ -43,5 +43,25 @@ class JSONService
 
         return $data;
         
+    }
+
+    public function getInvestorsComplaints(){
+        $data = [
+            'title' => 'Number Of Investors Complaints',
+            'content' => 'DATA OF THE MONTH ENDING MAY,2024',
+            'columns' => ['RECEIVED FROM','PENDING AT THE END OF LAST MONTH','RECEIVED','	RESOLVED','	TOTAL PENDING','PENDING COMPLAINTS > 3 MONTHS','AVERAGE RESOLUTION TIME ⌃(IN DAYS)'],
+            'rows' =>[
+                ['Directly from investor','Nil','Nil','N.A','Nil','Nill','N.A'],
+                ['Directly from investor','Nil','Nil','N.A','Nil','Nill','N.A'],
+                ['Directly from investor','Nil','Nil','N.A','Nil','Nill','N.A'],
+                ['Directly from investor','Nil','Nil','N.A','Nil','Nill','N.A'],
+                ['Directly from investor','Nil','Nil','N.A','Nil','Nill','N.A'],
+                ['Directly from investor','Nil','Nil','N.A','Nil','Nill','N.A'],
+                ['Directly from investor','Nil','Nil','N.A','Nil','Nill','N.A'],
+                ['Directly from investor','Nil','Nil','N.A','Nil','Nill','N.A'],
+            ],
+            'description' => '*Average Resolution time is the sum total of time taken to resolve each complaint in days, in the current month divided by total number of complaints resolved in the current month.'
+            ];
+        return $this->objToJsonObject($data);
     }
 }

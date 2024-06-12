@@ -13,4 +13,16 @@ class CommonService{
             $result = implode(" ",array_slice($arr,count($arr)-1))." <span>".$arr[count($arr)-1]."</span>";
         return $result;
     }
+
+    public static function objToJsonObject($input){
+        if(is_array($input)){
+            return json_decode(json_encode($input));
+        }
+        elseif(is_string($input)){
+            return json_decode($input);
+        }
+        else{
+            return new stdClass();
+        }
+    }
 }

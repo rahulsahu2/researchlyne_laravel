@@ -36,13 +36,17 @@
                 </div>
                 <div class="footer__links-content">
                   <ul class="footer__linklist">
-                    <li class="footer__linklist-item"> <a href="#">About Us</a>
+                    <li class="footer__linklist-item"> <a href="{{route('contact')}}">Contact Us</a>
+                    <li class="footer__linklist-item"> <a href="{{route('subscriptions')}}">Subscriptions</a>
                     </li>
-                    <li class="footer__linklist-item"> <a href="#">Teams</a>
+                    <li class="footer__linklist-item"> <a href="{{route('investors-charter')}}">Investor Charter</a>
                     </li>
-                    <li class="footer__linklist-item"> <a href="#">Services</a> </li>
-                    <li class="footer__linklist-item"> <a href="#">Features</a>
+                    <li class="footer__linklist-item"> <a href="{{route('investors-complaints')}}">Investor Complaints</a></li>
+                    <li class="footer__linklist-item"> <a href="{{route('privacy')}}">Privacy Policy</a>
                     </li>
+                    <li class="footer__linklist-item"> <a href="{{route('terms')}}">Terms & Conditions</a>
+                    </li>
+                    <li class="footer__linklist-item"> <a href="{{route('disclaimer')}}">Disclaimer</a></li>
                   </ul>
                 </div>
               </div>

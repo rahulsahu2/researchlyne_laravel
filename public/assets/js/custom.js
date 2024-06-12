@@ -12,7 +12,6 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 // =================== preloader js end ================== //
 
-
 // =================== light and dark start ================== //
 
 const colorSwitcher = document.getElementById('btnSwitch');
@@ -468,4 +467,6 @@ function toggleAllIconsDirection() {
 if (htmlTag.getAttribute('dir') === 'rtl') {
     toggleAllIconsDirection();
 }
+
+
 // =================== rtl icon direction chnage end here =================== //

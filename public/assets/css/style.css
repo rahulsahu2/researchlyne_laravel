@@ -84,6 +84,11 @@ Tags: Crypto, Forex, and Stocks Trading Business
   flex-wrap: wrap;
 }
 
+.invest-table{
+  overflow-y:scroll;
+  height:400px !important;
+}
+
 .header-left{
   text-align: left;
 }
@@ -2250,7 +2255,7 @@ ol {
 }
 @media (min-width: 992px) {
   .padding-top {
-    padding-block-start: 120px;
+    padding-block-start: 60px;
   }
 }
 
@@ -2268,7 +2273,7 @@ ol {
 }
 @media (min-width: 992px) {
   .padding-bottom {
-    padding-block-end: 120px;
+    padding-block-end: 60px;
   }
 }
 
@@ -8024,12 +8029,14 @@ textarea:focus-within {
 }
 .service__item--style1 .service__item-inner {
   background: linear-gradient(152deg, var(--bg-color-trans) 0%, var(--bg-color) 100%);
-  border: 2px solid var(--service-item-border-color);
+  border: 2px solid var(--brand-color);
+  border-radius: 50px;
 }
 .service__item--style1:hover .service__item-inner {
   transform: translateY(-5px);
   border: 2px solid var(--brand-color);
 }
+
 .service__item--style1:hover .service__item-thumb {
   background-color: var(--wh-color);
 }
@@ -11174,6 +11181,26 @@ html[data-bs-theme=dark] .social__link--style1:hover svg {
 }
 html[data-bs-theme=dark] .partner--gradient::after {
   background: #003E2C;
+}
+
+.investor-table{
+  border: 2px solid var(--brand-color);
+  border-radius: 10px;
+}
+
+table{
+  border: 2px solid var(--brand-color);
+}
+th{
+  background-color: var(--brand-color);
+  color: var(--text-color);
+}
+
+table > thead > tr{
+  background-color: var(--brand-color);
+  color: var(--text-color);
+  position:sticky;
+        top: 0 ;
 }
 
 /*# sourceMappingURL=style.css.map */
