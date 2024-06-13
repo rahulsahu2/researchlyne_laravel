@@ -45,17 +45,19 @@ class HomeController extends Controller
 
     public function privacy()
     {
-        return view('frontend.home.privacy');
+        $data = $this->jsonService->getDisclaimer();
+        return view('frontend.home.privacy',compact('data'));
     }
 
     public function terms()
     {
-        return view('frontend.home.terms');
+        $data = $this->jsonService->getDisclaimer();
+        return view('frontend.home.terms-and-conditions',compact('data'));
     }
 
     public function disclaimer(){
-
-        return view('frontend.home.disclaimer');
+        $data = $this->jsonService->getDisclaimer();
+        return view('frontend.home.disclaimer',compact('data'));
     }
 
     public function investorsCharter(){

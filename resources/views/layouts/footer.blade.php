@@ -7,7 +7,7 @@
           <div class="row gy-5 gx-4">
             <div class="col-md-6">
               <div class="footer__about">
-                <a href="{{ url('/') }}}" class="footer__about-logo"><img src="assets/images/logo/logo-dark.png"
+                <a href="{{ url('/') }}}" class="footer__about-logo"><img src="{{ asset('assets/images/logo/logo-dark.png')}}"
                     alt="Logo"></a>
                 <p class="footer__about-moto ">Mr. Amiteshwar Singh is Proprietor of M/s Amiteshwar.in and Researchlyne.com is a unit of Amiteshwar.in. Researchlyne.com is exclusively focused on research of Mutli-Cap Stocks and is backed by skilled research analyst who has more than half a decade of experience in stock market. 
                 Through this website the Research Analyst is trying to offer good researched stocks to its subscribers.</p>
@@ -68,7 +68,7 @@
       </div>
     </div>
     <div class="footer__shape">
-      <span class="footer__shape-item footer__shape-item--1"><img src="assets/images/footer/1.png"
+      <span class="footer__shape-item footer__shape-item--1"><img src="{{ asset('assets/images/footer/1.png')}}"
           alt="shape icon"></span>
       <span class="footer__shape-item footer__shape-item--2"> <span></span> </span>
     </div>

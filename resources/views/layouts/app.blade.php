@@ -27,6 +27,10 @@
   <link rel="stylesheet" href="{{ asset('assets/css/all.min.css')}}">
   <link rel="stylesheet" href="{{ asset('assets/css/swiper-bundle.min.css')}}">
 
+  {{-- gtranslate --}}
+  <script>window.gtranslateSettings = {"default_language":"en","wrapper_selector":".gtranslate_wrapper"}</script>
+  <script src="https://cdn.gtranslate.net/widgets/latest/dropdown.js" defer></script>
+
   <!-- main css for template -->
   <link rel="stylesheet" href="{{ asset('assets/css/style.css')}}">
 </head>

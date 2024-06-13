@@ -1948,6 +1948,12 @@ ol {
   transition: all 0.3s ease-out;
   color: var(--title-color);
 }
+.topbar{
+  background-color: var(--brand-color) !important;
+}
+.topbar > div > div > a{
+  color: #000 !important;
+}
 .swiper-nav__btn.active, .swiper-nav__btn:hover {
   background-color: var(--brand-color);
   border-color: var(--brand-color);
@@ -5519,7 +5525,7 @@ h6 a {
 }
 @media (min-width: 992px) {
   .account__content--style1 {
-    padding: 100px;
+    padding: 50px;
   }
 }
 .account__content--style2 {

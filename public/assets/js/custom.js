@@ -15,7 +15,6 @@ document.addEventListener('DOMContentLoaded', function () {
 // =================== light and dark start ================== //
 
 const colorSwitcher = document.getElementById('btnSwitch');
-const topbar = document.getElementById('topbar');
 
 const mainHeader = document.getElementById('main-header');
 updateClass();
@@ -56,11 +55,9 @@ function updateThemeColor(themeMode = 'light') {
 
     if (themeMode === 'dark') {
         colorSwitcher.classList.add('dark-switcher');
-        topbar.classList.add('text-light');
 
     } else {
         colorSwitcher.classList.remove('dark-switcher');
-        topbar.classList.remove('text-dark');
     }
 
     changeImage(themeMode);

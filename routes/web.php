@@ -3,6 +3,7 @@
 use App\Http\Controllers\Admin\AdminController;
 use App\Http\Controllers\Admin\AuthController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\SubscriberController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -49,6 +50,19 @@ Route::controller(HomeController::class)->group(function () {
     Route::get('/disclaimer','disclaimer')->name('disclaimer');
     Route::get('/investors-charter', 'investorsCharter')->name('investors-charter');
     Route::get('/investors-complaints', 'investorsComplaints')->name('investors-complaints');
+});
+
+Route::group(['as' => 'user.', 'prefix' => 'user'], function () {
+    Route::controller(SubscriberController::class)->group(function () {
+        Route::post('/login', 'authenticate')->name('authenticate');
+    });
+
+    Route::middleware('isUser')->group(function () {
+        Route::controller(SubscriberController::class)->group(function () {
+            Route::get('/dashboard', 'index')->name('dashboard');
+            Route::get('/profile', 'profile')->name('profile');
+        });
+    });
 });
 
 
