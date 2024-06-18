@@ -7,7 +7,8 @@
     <div class="container">
       <div class="pricing__wrapper">
         <div class="row g-4 align-items-center">
-          <div class="col-md-12 col-lg-12">
+          <div class="col-md-8 col-lg-3"></div>
+          <div class="col-md-8 col-lg-6">
             <div class="pricing__item" data-aos="fade-right" data-aos-duration="1000">
               <div class="pricing__item-inner">
                 <div class="pricing__item-content">

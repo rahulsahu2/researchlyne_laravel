@@ -1954,6 +1954,7 @@ ol {
 .topbar > div > div > a{
   color: #000 !important;
 }
+
 .swiper-nav__btn.active, .swiper-nav__btn:hover {
   background-color: var(--brand-color);
   border-color: var(--brand-color);
@@ -7495,30 +7496,30 @@ textarea:focus-within {
 }
 .floating-content__top-right {
   right: 0px;
-  top: 0px;
+  top: 10px;
 }
 @media (min-width: 576px) and (max-width: 767px) {
   .floating-content__top-right {
     right: -20px;
-    top: 5px;
+    top: 10px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .floating-content__top-right {
     right: 60px;
-    top: -50px;
+    top: -40px;
   }
 }
 @media (min-width: 992px) {
   .floating-content__top-right {
     right: -10px;
-    top: -80px;
+    top: -70px;
   }
 }
 @media (min-width: 768px) {
   .floating-content__top-right--style2 {
     right: -20px;
-    top: -80px;
+    top: -60px;
   }
   .floating-content__top-right--style2 img {
     max-width: 70px;

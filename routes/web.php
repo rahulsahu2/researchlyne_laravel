@@ -54,11 +54,12 @@ Route::controller(HomeController::class)->group(function () {
 
 Route::group(['as' => 'user.', 'prefix' => 'user'], function () {
     Route::controller(SubscriberController::class)->group(function () {
-        Route::post('/login', 'authenticate')->name('authenticate');
+        Route::post('/authenticate', 'authenticate')->name('authenticate');
     });
 
     Route::middleware('isUser')->group(function () {
         Route::controller(SubscriberController::class)->group(function () {
+            Route::get('/logout', 'logout')->name('logout');
             Route::get('/dashboard', 'index')->name('dashboard');
             Route::get('/profile', 'profile')->name('profile');
         });

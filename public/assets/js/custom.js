@@ -104,7 +104,7 @@ function changeImage(themeMode = 'light') {
             images[i].src = newSrc;
         }
     } else {
-        icon.src = 'assets/images/icon/moon.svg';
+        icon.src =  imageExists('/assets/images/icon/moon.svg') ? '/assets/images/icon/moon.svg' : '../assets/images/icon/moon.svg';
         var images = document.querySelectorAll('img.dark');
 
         for (var i = 0; i < images.length; i++) {
@@ -113,6 +113,17 @@ function changeImage(themeMode = 'light') {
             images[i].src = newSrc;
         }
     }
+
+}
+
+function imageExists(image_url){
+
+    var http = new XMLHttpRequest();
+
+    http.open('HEAD', image_url, false);
+    http.send();
+
+    return http.status != 404;
 
 }
 
@@ -241,7 +252,7 @@ const Partner = new Swiper('.partner__slider', {
         delay: 1,
         disableOnInteraction: true,
     },
-    speed: 2000,
+    speed: 5000,
 });
 
 
@@ -465,5 +476,18 @@ if (htmlTag.getAttribute('dir') === 'rtl') {
     toggleAllIconsDirection();
 }
 
+const toggleAllIconsDirectionbtn = document.getElementById("toggle-previous-recommendations");
+toggleAllIconsDirectionbtn.addEventListener("click", toggleAllIconsDirection);
+const old_recommendations_section = document.getElementById("old-recommendations-section");
+function toggleAllIconsDirection() {
+    if(old_recommendations_section.style.display === "none"){
+        old_recommendations_section.style.display = "block";
+        toggleAllIconsDirectionbtn.innerHTML = "Hide Previous Recommendations";
+    }else{
+        old_recommendations_section.style.display = "none";
+        toggleAllIconsDirectionbtn.innerHTML = "Show Previous Recommendations";
+    }
+}
+toggleAllIconsDirection();
 
 // =================== rtl icon direction chnage end here =================== //

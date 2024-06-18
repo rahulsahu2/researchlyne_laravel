@@ -10,8 +10,8 @@
       <div class="row g-4">
         <div class="col-12">
           <div>
-            <label for="account-email" class="form-label">Email</label>
-            <input type="email" class="form-control" id="account-email" placeholder="Enter your email" required="">
+            <label for="forgot-email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="forgot-email" name="email" placeholder="Enter your email" required="">
           </div>
         </div>
       </div>

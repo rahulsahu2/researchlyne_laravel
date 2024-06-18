@@ -15,8 +15,11 @@
             </select> --}}
 
         @if (Auth::check())
-          <a href="javascript:void(0)" class="trk-btn trk-btn--border trk-btn--primary">
+          <a href="javascript:void(0)"><i class="fa fa-user"></i>
             <span>Welcome {{ Auth::user()->name }}</span>
+          </a>
+          <a href="{{ route('user.logout')}}" class="ms-3"><i class="fa fa-sign-out-alt"></i>
+            <span>Log Out</span>
           </a>
         @else
           <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#login" id="login-btn"><i class="fa fa-user"></i>
@@ -42,10 +45,10 @@
               </li>
               @if (Auth::check())
                 <li>
-                  <a href="{{ route('about')}}">Recommendations</a>
+                  <a href="{{ route('user.dashboard')}}">Recommendations</a>
                 </li>
                 <li>
-                  <a href="{{ route('subscriptions')}}">Profile</a>
+                  <a href="{{ route('user.profile')}}">Profile</a>
                 </li>
               @else
                 <li>
@@ -70,13 +73,13 @@
           </div>
           <div class="header-action">
             <div class="menu-area">
-              @if (Auth::check())
+              {{-- @if (Auth::check())
                 <div class="header-btn">
-                  <a href="signup.html" class="trk-btn trk-btn--border trk-btn--primary">
+                  <a href="{{ route('user.logout')}}" class="trk-btn trk-btn--border trk-btn--primary">
                     <span>Log Out</span>
                   </a>
                 </div>
-              @endif
+              @endif --}}
               
               <!-- toggle icons -->
               <div class="header-bar d-lg-none header-bar--style1">

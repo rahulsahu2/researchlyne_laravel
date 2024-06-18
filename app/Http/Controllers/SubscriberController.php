@@ -2,13 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Http\Request;
 use App\Models\Subscriber;
-use Request;
 
 class SubscriberController extends Controller
 {
     public function __construct(){
-        $this->middleware('isUser');
+        $this->middleware('isUser')->except('authenticate');
     }
     /**
      * Display a listing of the resource.
@@ -36,21 +36,24 @@ class SubscriberController extends Controller
             'password' => 'required',
         ]);
 
-        $credentials = $request->all();
+        $credentials = $request->only('email', 'password');
         if (auth()->attempt($credentials)) {
-            return redirect()->route('user.dashboard')->with(['success' => 'Successfully logged in.', 'type' => 'success']);
+            return redirect()->route('user.dashboard')->with(['message' => 'Successfully logged in.', 'type' => 'success']);
         }
         else{
-            return redirect()->back()->with(['error' => 'Invalid credentials.', 'type' => 'error']);
+            return redirect()->back()->with(['message' => 'Invalid credentials.', 'type' => 'error']);
         }
     }
 
     /**
      * Display the specified resource.
      */
-    public function show(Subscriber $subscriber)
+    public function Logout(Request $request)
     {
-        //
+        auth()->logout();
+        $request->session()->invalidate();
+        $request->session()->regenerateToken();
+        return redirect()->back()->with(['message' => 'Successfully logged out.', 'type' => 'success']);
     }
 
     /**
