@@ -3,4 +3,5 @@
     @include('frontend.components.sub-header', ['title' => 'Recommendations'])
     @include('frontend.components.user-offer-section', ['data' => null])
     @include('frontend.components.recommendations-section', ['data' => null])
+    @include('frontend.components.previous-recommendations', ['data' => null])
 @endsection

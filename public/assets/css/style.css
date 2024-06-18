@@ -89,6 +89,11 @@ Tags: Crypto, Forex, and Stocks Trading Business
   height:400px !important;
 }
 
+.recommand-table{
+  border-radius: 10px;
+  height:auto !important;
+}
+
 .header-left{
   text-align: left;
 }
