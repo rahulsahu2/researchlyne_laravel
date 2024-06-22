@@ -1,3 +1,8 @@
+   
+   @inject('obj', 'App\Services\CommonService')
+   @php
+        $countrydata = $obj::getCountrycode();
+   @endphp
    <!-- ===============>> Contact section start here <<================= -->
     <section class="contact padding-top padding-bottom">
         <div class="container">
@@ -75,28 +80,35 @@
                     <div class="row g-4">
                       <div class="col-6">
                         <div>
-                          <input class="form-control" type="text" id="name" placeholder="Full Name">
+                          <input class="form-control" type="text" id="name" placeholder="Full Name" required>
                         </div>
                       </div>
                       <div class="col-6">
                         <div>
-                          <input class="form-control" type="email" id="email" placeholder="Email here">
+                          <input class="form-control" type="email" id="email" placeholder="Email here" required>
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <div class="input-group">
+                          <div class="input-group-prepend">
+                            <select class="form-control" name="country_code">                              
+                               @foreach ($countrydata->data as $key)
+                                 <option value="{{$key->code}}" {{$countrydata->default == $key->iso ? 'selected' : ''}}>{{$key->code}}</option>
+                               @endforeach   
+                            </select>
+                          </div>
+                          <input class="form-control" type="text" id="mobile" maxlength="10" onkeypress="return isNumber(event)" placeholder="Mobile here" required>
                         </div>
                       </div>
                       <div class="col-6">
                         <div>
-                          <input class="form-control" type="text" id="mobile" placeholder="Mobile here">
-                        </div>
-                      </div>
-                      <div class="col-6">
-                        <div>
-                          <input class="form-control" type="text" id="subject" placeholder="Subject here">
+                          <input class="form-control" type="text" id="subject" placeholder="Subject here" required>
                         </div>
                       </div>
                       <div class="col-12">
                         <div>
                           <textarea cols="30" rows="3" class="form-control" id="textarea"
-                            placeholder="Enter Your Message"></textarea>
+                            placeholder="Enter Your Message" required></textarea>
                         </div>
                       </div>
                     </div>
@@ -113,4 +125,16 @@
           <span class="contact__shape-item contact__shape-item--2"> <span></span> </span>
         </div>
     </section>
+    <script>
+      function isNumber(evt) {
+        evt = (evt) ? evt : window.event;
+        var charCode = (evt.which) ? evt.which : evt.keyCode;
+        if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+          alert("Please enter only Numbers.");
+          return false;
+        }
+
+        return true;
+      }
+    </script>
     <!-- ===============>> Contact section start here <<================= -->
