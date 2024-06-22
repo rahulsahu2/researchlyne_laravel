@@ -1,6 +1,9 @@
    <!-- ===============>> Contact section start here <<================= -->
     <section class="contact padding-top padding-bottom">
         <div class="container">
+          <div class="section-header section-header--max50">
+            <h2 class="mb-10 mt-minus-5">Contact <span>Us</span></h2>
+          </div>
           <div class="contact__wrapper">
             <div class="row g-5">
               <div class="col-md-5">

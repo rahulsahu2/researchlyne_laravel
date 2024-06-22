@@ -27,7 +27,7 @@
                     Subscribe <span><i class="fa-solid fa-arrow-right"></i></span>
                 </a>
                 </div>
-                <div class="banner__content-social">
+                {{-- <div class="banner__content-social">
                 <p>Follow Us</p>
                 <ul class="social">
                     <li class="social__item">
@@ -46,7 +46,7 @@
                     <a href="signin.html" class="social__link social__link--style1"><i class="fab fa-twitter"></i></a>
                     </li>
                 </ul>
-                </div>
+                </div> --}}
             </div>
             </div>
             <div class="col-lg-6 col-md-5">
@@ -197,6 +197,7 @@
       <div class="testimonial__wrapper" data-aos="fade-up" data-aos-duration="1000">
         <div class="testimonial__slider swiper">
           <div class="swiper-wrapper">
+            @for ($i = 0; $i < 3; $i++)
             <div class="swiper-slide">
               <div class="testimonial__item testimonial__item--style1">
                 <div class="testimonial__item-inner">
@@ -226,7 +227,7 @@
                       <div class="testimonial__author">
                         <div class="testimonial__author-designation">
                           <h6>+112.52% WITHIN 13 WEEKS</h6>
-                          <span>Railtel Corporation of India Ltd.</span>
+                          <h5>Railtel Corporation of India Ltd.</h5>
                         </div>
                       </div>
                       <div class="testimonial__quote">
@@ -236,87 +237,9 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="testimonial__item testimonial__item--style1">
-                    <div class="testimonial__item-inner">
-                    <div class="testimonial__item-content">
-                        <table class="table table-bordered">
-                            <thead>
-                                <tr>
-                                    <th scope="col">Description</th>
-                                    <th scope="col">Date</th>
-                                    <th scope="col">Price</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="custom-border">Rec. Price</td>
-                                    <td class="custom-border no-border-right">14-Feb-2024</td>
-                                    <td class="custom-border">122.95</td>
-                                </tr>
-                                <tr>
-                                    <td class="custom-border">High Price</td>
-                                    <td class="custom-border no-border-right">22-May-2024</td>
-                                    <td class="custom-border">175.35</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <div class="testimonial__footer">
-                        <div class="testimonial__author">
-                            <div class="testimonial__author-designation">
-                            <h6>+112.52% WITHIN 13 WEEKS</h6>
-                            <span>Railtel Corporation of India Ltd.</span>
-                            </div>
-                        </div>
-                        <div class="testimonial__quote">
-                            <span><i class="fa-solid fa-quote-right"></i></span>
-                        </div>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide">
-            <div class="testimonial__item testimonial__item--style1">
-                <div class="testimonial__item-inner">
-                <div class="testimonial__item-content">
-                    <table class="table table-bordered">
-                        <thead>
-                            <tr>
-                                <th scope="col">Description</th>
-                                <th scope="col">Date</th>
-                                <th scope="col">Price</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="custom-border">Rec. Price</td>
-                                <td class="custom-border no-border-right">14-Feb-2024</td>
-                                <td class="custom-border">122.95</td>
-                            </tr>
-                            <tr>
-                                <td class="custom-border">High Price</td>
-                                <td class="custom-border no-border-right">22-May-2024</td>
-                                <td class="custom-border">175.35</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <div class="testimonial__footer">
-                    <div class="testimonial__author">
-                        <div class="testimonial__author-designation">
-                        <h6>+112.52% WITHIN 13 WEEKS</h6>
-                        <span>Railtel Corporation of India Ltd.</span>
-                        </div>
-                    </div>
-                    <div class="testimonial__quote">
-                        <span><i class="fa-solid fa-quote-right"></i></span>
-                    </div>
-                    </div>
-                </div>
-                </div>
-            </div>
-            </div>
+            </div>    
+            @endfor
+            
           </div>
         </div>
       </div>

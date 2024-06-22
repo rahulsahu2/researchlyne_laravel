@@ -49,7 +49,7 @@
                 </div>
             </div>
             </div>
-            <div class="col-sm-6 col-lg-6">
+            <div class="col-sm-6 col-lg-3">
             <div class="service__item service__item--style1" data-aos="fade-up" data-aos-duration="800">
                 <div class="service__item-inner text-center">
                 <div class="service__item-thumb mb-30">

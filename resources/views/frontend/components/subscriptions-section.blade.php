@@ -22,8 +22,10 @@
                   <div class="pricing__item-middle">
                     <ul class="pricing__list">
                       <li class="pricing__list-item"><span><img src="assets/images/icon/check.svg" alt="check"
-                            class="dark"></span>
-                            Rs.3000/-35% off</li>
+                            class="dark">
+                          </span>Rs.3000/- 
+                          <span class="subs__meta-tag blog__meta-tag--style2">35% OFF</span>
+                        </li>
                       <li class="pricing__list-item"><span><img src="assets/images/icon/check.svg" alt="check"
                             class="dark"></span>
                             You Save Rs.1050/-</li>
@@ -43,8 +45,10 @@
           <div class="col-md-6 col-lg-4">
             <div class="pricing__item" data-aos="fade-right" data-aos-duration="1000">
               <div class="pricing__item-inner">
-                <div class="pricing__item-content">
-
+                <div class="trk-btn--primary most-popular">
+                  <h3 class="text-center">Most Popular</h3>
+                </div>
+                <div class="pricing__item-content">  
                   <!-- pricing top part -->
                   <div class="pricing__item-top">
                     <h6 class="mb-15">Standard Plan</h6>
@@ -56,7 +60,9 @@
                     <ul class="pricing__list">
                       <li class="pricing__list-item"><span><img src="assets/images/icon/check.svg" alt="check"
                             class="dark"></span>
-                            Rs.6000/-45% off</li>
+                            Rs.6000/-
+                            <span class="subs__meta-tag blog__meta-tag--style2">45% OFF</span>
+                          </li>
                       <li class="pricing__list-item"><span><img src="assets/images/icon/check.svg" alt="check"
                             class="dark"></span>
                             You Save Rs.2700/-</li>
@@ -89,7 +95,9 @@
                     <ul class="pricing__list">
                       <li class="pricing__list-item"><span><img src="assets/images/icon/check.svg" alt="check"
                             class="dark"></span>
-                            Rs.12000/-55% off</li>
+                            Rs.12000/-
+                            <span class="subs__meta-tag blog__meta-tag--style2">55% OFF</span>
+                          </li>
                       <li class="pricing__list-item"><span><img src="assets/images/icon/check.svg" alt="check"
                             class="dark"></span>
                             You Save Rs.6600/-</li>

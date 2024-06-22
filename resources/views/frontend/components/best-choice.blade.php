@@ -13,7 +13,6 @@
                 <div class="roadmap__item-content">
                   <div class="roadmap__item-header">
                     <h3>SERIOUS INVESTING</h3>
-                    <span>P1</span>
                   </div>
                   <p>Researchlyne.com is for the earnest investors who are willing to build wealth and increase their earnings in long run. To achieve this, we study plethora of listed companies of Indian Stock Market and choose only those companies that have potential to be called good investment.</p>
                 </div>
@@ -28,7 +27,6 @@
                 <div class="roadmap__item-content">
                   <div class="roadmap__item-header">
                     <h3>AUTOMATIC DIVERSIFICATION IN EQUITIES</h3>
-                    <span>P2</span>
                   </div>
                   <p>With thorough analysis, we recommend 2 Mutli-Cap Stocks every week. This Multi-Cap model helps the subscribers to make hybrid investments decision i.e. combination of aggressive & conservative approach.</p>
                 </div>
@@ -42,7 +40,6 @@
                 <div class="roadmap__item-content">
                   <div class="roadmap__item-header">
                     <h3>OUR AIM</h3>
-                    <span>P3</span>
                   </div>
                   <p>The aim of our recommendations is to help the subscribers increase the monetary benefit by of investment in different recommended stocks. Therefore, selling the same whenever they achieve the predicted target value. This will help the subscribers to realise the gains and give them confidence to further invest in recommended stocks of future.</p>
                 </div>
@@ -56,7 +53,6 @@
                 <div class="roadmap__item-content">
                   <div class="roadmap__item-header">
                     <h3>OUR SUGGESTION</h3>
-                    <span>P4</span>
                   </div>
                   <p>We don’t recommend stocks for intraday trading and don’t encourage you to go for futures and options, as we do not want any of our valuable subscriber to lose even single penny by way of speculation.</p>
                 </div>
@@ -70,7 +66,6 @@
                 <div class="roadmap__item-content">
                   <div class="roadmap__item-header">
                     <h3>OUR RECOMMENDATION</h3>
-                    <span>P5</span>
                   </div>
                   <p>By availing our subscription, the Subscribers will get recommendation of 2 Mutli-Cap Stocks i.e. 1 on Wednesday and 1 on Saturday along with analysis report about the Company’s financials and market prospects as well as the target price of the stock.</p>
                 </div>

@@ -252,7 +252,7 @@ const Partner = new Swiper('.partner__slider', {
         delay: 1,
         disableOnInteraction: true,
     },
-    speed: 5000,
+    speed: 8000,
 });
 
 
