@@ -12,6 +12,9 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 // =================== preloader js end ================== //
 
+
+// =================== countdown timer ================== //
+
 $(function() {
     function getCounterData(obj) {
       var days = parseInt($('.e-m-days', obj).text());
@@ -46,6 +49,8 @@ $(function() {
       setCounterData(count, $("#countdown-timer"));
     }, 1000);
   });
+
+// =================== countdown timer end ================== //
 
 // =================== light and dark start ================== //
 

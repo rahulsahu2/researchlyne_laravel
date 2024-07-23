@@ -22,9 +22,9 @@
             <span>Log Out</span>
           </a>
         @else
-          <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#login" id="login-btn"><i class="fa fa-user"></i>
-            <span>Login</span>
-          </a>
+            <a class="btn trk-btn--primary login-btn" href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#login" id="login-btn"><i class="fa fa-user"></i>
+              <span>Login</span>
+            </a>
         @endif
       </div>
     </div>

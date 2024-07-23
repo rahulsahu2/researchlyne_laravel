@@ -3422,6 +3422,15 @@ h6 a {
   padding-inline: 100px !important;
 }
 
+.login-btn{
+  box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.3); 
+  border: 2px solid black;
+  background: var(--bg-color) !important;
+}
+.login-btn:hover {
+  background: var(--arrow-icon-color);
+}
+
 /*=========<<Margin property Utilities end>>=========*/
 .header-section {
   width: 100%;
