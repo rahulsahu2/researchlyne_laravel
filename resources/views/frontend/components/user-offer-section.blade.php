@@ -1,8 +1,16 @@
   <!-- ===============>> Pricing section start here <<================= -->
   <section class="pricing padding-top padding-bottom">
     <div class="section-header section-header--max50">
-        <p>Offers Ending Soon</p>
       <h2 class="mb-10 mt-minus-5">Exclusive Existing <span>Client Offer</span></h2>
+      <p>Offers Ending Soon</p>
+      <div class="blog__item-inner p-1">
+        <h3 class="10 mt-3" id="countdown-timer" >
+          <span style="display: none;" class="e-m-days">23</span>
+          <span class="e-m-hours">12</span> Hours |
+          <span class="e-m-minutes">41</span> Minutes |
+          <span class="e-m-seconds">36</span> Seconds
+        </h3>
+      </div>
     </div>
     <div class="container">
       <div class="pricing__wrapper">

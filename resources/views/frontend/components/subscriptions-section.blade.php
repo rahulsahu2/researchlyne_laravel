@@ -3,6 +3,14 @@
     <div class="section-header section-header--max50">
       <h2 class="mb-10 mt-minus-5">Our <span>Subscription </span>plan</h2>
       <p>GET LOGIN DETAILS AFTER SUBSCRIPTION</p>
+      <div class="blog__item-inner p-1">
+        <h3 class="10 mt-3" id="countdown-timer" >
+          <span style="display: none;" class="e-m-days">23</span>
+          <span class="e-m-hours">12</span> Hours |
+          <span class="e-m-minutes">41</span> Minutes |
+          <span class="e-m-seconds">36</span> Seconds
+        </h3>
+      </div>
     </div>
     <div class="container">
       <div class="pricing__wrapper">

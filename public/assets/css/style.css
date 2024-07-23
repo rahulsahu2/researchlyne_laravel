@@ -524,7 +524,7 @@ ol {
   --social-border-color-2: #ECEFF2;
   --social-border-color-3: #ECEFF2;
   --form-border: #CFDEF1;
-  --title-color:#006a4e;
+  --title-color:#00b786;
   --title-color-style2:#0C263A;
   --text-color:#6B777F;
   --text-color-light: #6B6F7F;
@@ -8968,6 +8968,9 @@ textarea:focus-within {
   margin:-35px -28px 10px -28px;
   overflow:hidden;
   border-radius:16px 16px 0px 0px;
+}
+.most-popular h3{
+  color: var(--secondary-color);
 }
 .blog__meta-tag {
   font-size: 0.875rem;
