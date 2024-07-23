@@ -93,6 +93,9 @@
       </div>
     </div>
   </header>
+  <a href="https://api.whatsapp.com/send?phone=1234567890&text=Hi" class="float" target="_blank">
+    <img class="wa-float"/>
+  </a>
   <!-- ===============>> Header section end here <<================= -->
   {{-- modal for login --}}
   <div class=" modal fade" id="login" role="dialog">
