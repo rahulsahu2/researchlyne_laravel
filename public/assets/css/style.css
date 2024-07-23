@@ -1,16 +1,4 @@
-/*!
-Template Name: Bitrader - Professional Multipurpose HTML Template for Your Crypto, Forex, Stocks & Day Trading Business
-Template URI: 
-Author: thetork
-Author URI: https: //themeforest.net/user/thetork/portfolio
-Description: Experience the power of Bitrader, the ultimate HTML template designed to transform your trading business. With its sleek design and advanced features, Bitrader empowers you to showcase your expertise, engage clients, and dominate the markets. Elevate your online presence and unlock new trading possibilities with Bitrader.
-Version: 1.0.0
-Text Domain: Bitrader
-Tags: Crypto, Forex, and Stocks Trading Business
-
-*/
-/*
------------------Table of content start -----------------
+/*-----------------Table of content start -----------------
 
 1. Configuration and helpers
     -extends,
@@ -493,6 +481,9 @@ textarea, .account__social-btn, .banner--style3 .banner__bg-element span, .banne
 ol {
   list-style: none;
 }
+.ul-with-dot, .ol-with-dot {
+  list-style-type: circle;
+}
 
 /*=========<< List Style property extends end>>=========*/
 /* @@@@@@@@@@@@@  Extend Property CSS Writing Now  @@@@@@@@@@@@@@ */
@@ -638,7 +629,7 @@ ol {
   --title-color:#FFFFFF;
   --title-color-style2:#BBC2C7;
   --text-color:rgba(255, 255, 255, 0.6);
-  --text-color-light:#FFFFFF;
+  --text-color-light:#006a4e;
   --text-color-2: rgba(255, 255, 255, 0.6);
   --text-color-3: rgba(255, 255, 255, 0.70);
   --text-color-4: #B0B3BF;
@@ -10768,6 +10759,12 @@ textarea:focus-within {
   background-color: var(--bg-color-10);
   border-radius: 16px;
   z-index: -1;
+}
+@media screen and (max-width: 575px) {
+  .about__thumb-image img {
+    visibility: hidden;
+    height:150px;
+  }
 }
 @media (min-width: 576px) {
   .about__thumb--style3::after {

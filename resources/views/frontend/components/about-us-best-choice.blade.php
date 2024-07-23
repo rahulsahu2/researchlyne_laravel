@@ -14,7 +14,7 @@
     
                     <div class="blog__content">
                       <div class="blog__meta">
-                        <span class="blog__meta-tag blog__meta-tag--style1">Reason {{$i+1}}</span>
+                        {{-- <span class="blog__meta-tag blog__meta-tag--style1">Reason {{$i+1}}</span> --}}
                       </div>
                       <h5 class="10 style2"> <a href="blog-details.html">AUTOMATIC DIVERSIFICATION IN EQUITIES</a> </h5>
     

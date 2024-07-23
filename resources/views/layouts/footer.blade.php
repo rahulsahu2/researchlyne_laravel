@@ -53,15 +53,18 @@
 
             </div>
             <div class="col-md-12 col-sm-12 col-12">
-                <p class="text-center footer__linklist-item-special">"Registration granted by SEBI, and certification from NISM in no way guarantee performance of the intermediary or provide any assurance of returns to investors." "The securities quoted, if any are for illustration only and are not recommendatory." 
-                  "Investments in securities market are subject to market risks. Read all the related documents carefully before investing."</p>
+                <p class="footer__linklist-item-special">
+                  Registration granted by SEBI, and certification from NISM in no way guarantee performance of the intermediary or provide any assurance of returns to investors.<br>
+                  The securities quoted, if any are for illustration only and are not recommendatory.<br>
+                  Investments in securities market are subject to market risks. Read all the related documents carefully before investing.
+                </p>
             </div>
           </div>
         </div>
         <div class="footer__bottom">
           <div class="footer__end">
             <div class="footer__end-copyright">
-              <p class=" mb-0">© <a href="{{ url('/') }}" target="_blank">Researchlyne.com</a>, a unit of Amiteshwar.in, All Rights Reserved.</p>
+                <p class="mb-0">© <a href="{{ url('/') }}" target="_blank">Researchlyne.com</a>, a unit of Amiteshwar.in, All Rights Reserved.</p>
             </div>
           </div>
         </div>
